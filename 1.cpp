@@ -89,7 +89,7 @@ int main (void)
 	else 
 	printf("智力处于低潮期第%d天。",c-12); 
 	system("pause");
-	return o;
+	return 0;
 	
 	
  } 
