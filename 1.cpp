@@ -2,12 +2,12 @@
 #include <Windows.h>
 int main (void)
 {
-	printf("¡¾Title¡¿:\nÔÚÊ¹ÓÃÕâ¸öÈí¼þÖ®Ç°Äú±ØÐëÖªµÀÄú¹«ÀúµÄÉúÈÕ¡£ÇëÄúÈ·±£×¼È·£¬²»È»²éÑ¯½á¹û»á²»ÕæÊµàÞ~\n\n\n");
+	printf("ã€Titleã€‘:\nåœ¨ä½¿ç”¨è¿™ä¸ªè½¯ä»¶ä¹‹å‰æ‚¨å¿…é¡»çŸ¥é“æ‚¨å…¬åŽ†çš„ç”Ÿæ—¥ã€‚è¯·æ‚¨ç¡®ä¿å‡†ç¡®ï¼Œä¸ç„¶æŸ¥è¯¢ç»“æžœä¼šä¸çœŸå®žå™¢~\n\n\n");
 	int Y,M,D,y,m,d,i,d1=0,d2=0,R=0,sum;
 	int a,b,c,k;
-	printf("ÇëÊäÈë½ñÌìµÄÈÕÆÚ£ºÄê ÔÂ ÈÕ\n"); 
+	printf("è¯·è¾“å…¥ä»Šå¤©çš„æ—¥æœŸï¼šå¹´ æœˆ æ—¥\n"); 
 	scanf("%d %d %d",&y,&m,&d);
-	printf("ÇëÊäÈëÄãµÄ³öÉúÈÕÆÚ£ºÄê ÔÂ ÈÕ\n"); 
+	printf("è¯·è¾“å…¥ä½ çš„å‡ºç”Ÿæ—¥æœŸï¼šå¹´ æœˆ æ—¥\n"); 
 	scanf("%d %d %d",&Y,&M,&D);
 	for(i=Y;i<=y;i++)
 	if(i%4==0&&i%100!=0||i%400==0)
@@ -60,35 +60,36 @@ int main (void)
 	c = sum%33;
 	printf("a = %d ,b = %d,c = %d\n",a,b,c);
 	if(a==0)
-	printf("ÌåÁ¦¸ÕºÃÊÇÖÜÆÚÈÕ¡£");
+	printf("ä½“åŠ›åˆšå¥½æ˜¯å‘¨æœŸæ—¥ã€‚");
 	else if(a>0&&a<12)
-	printf("ÌåÁ¦´¦ÓÚ¸ß³±ÆÚµÚ%dÌì¡£",a);
+	printf("ä½“åŠ›å¤„äºŽé«˜æ½®æœŸç¬¬%då¤©ã€‚",a);
 	else if(a==12)
-	printf("ÌåÁ¦¸ÕºÃÊÇÁÙ½çÈÕ¡£");
+	printf("ä½“åŠ›åˆšå¥½æ˜¯ä¸´ç•Œæ—¥ã€‚");
 	else 
-	printf("ÌåÁ¦´¦ÓÚµÍ³±ÆÚµÚ%dÌì¡£",a-12); 
+	printf("ä½“åŠ›å¤„äºŽä½Žæ½®æœŸç¬¬%då¤©ã€‚",a-12); 
 	
 	
 	
 	if(b==0)
-	printf("ÇéÐ÷¸ÕºÃÊÇÖÜÆÚÈÕ¡£");
+	printf("æƒ…ç»ªåˆšå¥½æ˜¯å‘¨æœŸæ—¥ã€‚");
 	else if(b>0&&b<12)
-	printf("ÇéÐ÷´¦ÓÚ¸ß³±ÆÚµÚ%dÌì¡£",b);
+	printf("æƒ…ç»ªå¤„äºŽé«˜æ½®æœŸç¬¬%då¤©ã€‚",b);
 	else if(b==12)
-	printf("ÇéÐ÷¸ÕºÃÊÇÁÙ½çÈÕ¡£");
+	printf("æƒ…ç»ªåˆšå¥½æ˜¯ä¸´ç•Œæ—¥ã€‚");
 	else 
-	printf("ÇéÐ÷´¦ÓÚµÍ³±ÆÚµÚ%dÌì¡£",b-12); 
+	printf("æƒ…ç»ªå¤„äºŽä½Žæ½®æœŸç¬¬%då¤©ã€‚",b-12); 
 	
 	
 	if(c==0)
-	printf("ÖÇÁ¦¸ÕºÃÊÇÖÜÆÚÈÕ¡£");
+	printf("æ™ºåŠ›åˆšå¥½æ˜¯å‘¨æœŸæ—¥ã€‚");
 	else if(c>0&&c<12)
-	printf("ÖÇÁ¦´¦ÓÚ¸ß³±ÆÚµÚ%dÌì",c);
+	printf("æ™ºåŠ›å¤„äºŽé«˜æ½®æœŸç¬¬%då¤©",c);
 	else if(c==12)
-	printf("ÖÇÁ¦¸ÕºÃÊÇÁÙ½çÈÕ¡£");
+	printf("æ™ºåŠ›åˆšå¥½æ˜¯ä¸´ç•Œæ—¥ã€‚");
 	else 
-	printf("ÖÇÁ¦´¦ÓÚµÍ³±ÆÚµÚ%dÌì¡£",c-12); 
+	printf("æ™ºåŠ›å¤„äºŽä½Žæ½®æœŸç¬¬%då¤©ã€‚",c-12); 
 	system("pause");
+	return o;
 	
 	
  } 
