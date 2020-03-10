@@ -29,7 +29,7 @@ int main (void)
 		case 4:d1+=31;
 		case 3:d1+=k;
 		case 2:d1+=31;
-		default :;		
+		default :1;		
 	}d1+=d;
 	if(Y%4==0&&Y%100!=0||Y%400==0)
 	k=29;
@@ -49,7 +49,7 @@ int main (void)
 		case 4:d2+=31;
 		case 3:d2+=k;
 		case 2:d2+=31;
-		default :;		
+		default :1;		
 	}d2+=D;
 	printf("d2 = %d\n",d2);
 	
